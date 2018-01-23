@@ -99,6 +99,7 @@ RUN set -xe \
 		libxml2-dev \
 		sqlite-dev \
 		libpng \
+		libpng-dev \
 	\
 	&& export CFLAGS="$PHP_CFLAGS" \
 		CPPFLAGS="$PHP_CPPFLAGS" \
