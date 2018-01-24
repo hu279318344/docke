@@ -16,7 +16,8 @@ ENV PHPIZE_DEPS \
 		libc-dev \
 		make \
 		pkgconf \
-		re2c
+		re2c \
+		libpng-dev \
 RUN apk add --no-cache --virtual .persistent-deps \
 		ca-certificates \
 		curl \
@@ -96,7 +97,8 @@ RUN set -xe \
 		libedit-dev \
 		openssl-dev \
 		libxml2-dev \
-		sqlite-dev \
+		php5-gd \
+		php5-pdo_mysql \
 	\
 	&& export CFLAGS="$PHP_CFLAGS" \
 		CPPFLAGS="$PHP_CPPFLAGS" \
