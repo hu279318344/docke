@@ -97,6 +97,8 @@ RUN set -xe \
 		openssl-dev \
 		libxml2-dev \
 		sqlite-dev \
+		php5-gd \
+		php5-pdo_mysql \
 	\
 	&& export CFLAGS="$PHP_CFLAGS" \
 		CPPFLAGS="$PHP_CPPFLAGS" \
