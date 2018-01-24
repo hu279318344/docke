@@ -16,7 +16,9 @@ ENV PHPIZE_DEPS \
 		libc-dev \
 		make \
 		pkgconf \
-		re2c
+		re2c \
+		libpng \
+		libjpeg \
 RUN apk add --no-cache --virtual .persistent-deps \
 		ca-certificates \
 		curl \
