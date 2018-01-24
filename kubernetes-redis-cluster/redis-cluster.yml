@@ -53,7 +53,7 @@ data:
 
     redis-server /conf/redis.conf &
     # Discover peers
-    wget https://storage.googleapis.com/kubernetes-release/pets/peer-finder -O /bin/peer-finder
+    wget https://raw.githubusercontent.com/hu279381344/docke/master/kubernetes-redis-cluster/peer-finder -O /bin/peer-finder
     chmod u+x /bin/peer-finder
     peer-finder -on-start 'tee > /conf/initial_peers' -service redis-cluster -ns $POD_NAMESPACE
 
