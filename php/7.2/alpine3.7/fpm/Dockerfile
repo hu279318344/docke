@@ -17,7 +17,8 @@ ENV PHPIZE_DEPS \
 		make \
 		pkgconf \
 		re2c
-RUN apk add --no-cache --virtual .persistent-deps \
+RUN  apk update \
+             && apk add --no-cache --virtual .persistent-deps \
 		ca-certificates \
 		curl \
 		tar \

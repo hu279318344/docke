@@ -18,6 +18,7 @@ ENV PHPIZE_DEPS \
 		pkgconf \
 		re2c \
 		libpng-dev \
+RUN apk update 
 RUN apk add --no-cache --virtual .persistent-deps \
 		ca-certificates \
 		curl \
